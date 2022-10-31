@@ -4,7 +4,8 @@
   "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/server.js"
+    "start": "node ./server/server.js",
+    "server": "nodemon ./server/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
+    "nodemon": "^2.0.20",
     "pg": "^8.3.3"
   }
 }

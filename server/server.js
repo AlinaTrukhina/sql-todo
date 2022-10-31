@@ -76,7 +76,15 @@ app.put('/tasks/:id', (req, res) => {
     });
 });
 
-const port = 3000;
+//const port = 3000;
+
+//console.log('process.env', process.env);
+
+console.log('your fave food is', process.env.FAV_FOOD);
+
+console.log('your port food is', process.env.PORT);
+
+const port = process.env.PORT || 3000;
 
 console.log(`We're going to listen on port`, port);
 app.listen(port, () => {
